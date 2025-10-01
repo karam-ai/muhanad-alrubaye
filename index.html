@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهند الربيعي | صوت الحقوق والنزاهة</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Tajawal font for Arabic text and set smooth scrolling -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f4f8; /* Light background for contrast */
+        }
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: #fbbd0a; /* Gold accent */
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+        .timeline-item::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: #0b2d69;
+            background-color: #fbbd0a;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transform: translateX(50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-[#0b2d69] shadow-xl">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-14">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-yellow-300">م. الربيعي</span>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="#vision" class="nav-link">الرؤية</a>
+                    <a href="#experience" class="nav-link">الخبرة</a>
+                    <a href="#achievements" class="nav-link">الإنجازات</a>
+                    <a href="#election" class="nav-link">صوتكم</a>
+                </div>
+            </div>
+        </div>
+        <!-- Inline CSS for nav links -->
+        <style>
+            .nav-link {
+                color: #ffffff;
+                padding: 0 0.5rem;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                transition: color 0.2s, background-color 0.2s;
+            }
+            .nav-link:hover {
+                color: #fbbd0a;
+            }
+        </style>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 pt-0">
+
+        <!-- Header and Hero Section -->
+        <header class="bg-[#1e3a8a] text-white p-6 sm:p-10 rounded-b-xl shadow-2xl mb-10 mt-0">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                
+                <!-- Candidate Info -->
+                <div class="text-center sm:text-right order-2 sm:order-1 sm:ml-6 mt-6 sm:mt-0 flex-grow">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 text-yellow-300">
+                        مهند الربيعي
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-light">
+                        ⚖️ حقوقي بخبرة 20 عامًا - التزام أخلاقي راسخ
+                    </p>
+                    <p class="mt-4 text-base opacity-90 max-w-lg mx-auto sm:mx-0">
+                        لتحويل القانون إلى حماية حقيقية لحقوقكم وكرامتكم. أترشح لأكون **صوتكم القوي** في المؤسسة التشريعية.
+                    </p>
+                </div>
+
+                <!-- Candidate Image -->
+                <div class="order-1 sm:order-2 flex-shrink-0">
+                    <div class="w-36 h-36 sm:w-48 sm:h-48 rounded-full border-4 border-yellow-300 overflow-hidden shadow-2xl mx-auto">
+                        <!-- Using the uploaded candidate image file name -->
+                        <img src="mohanad.jpg" alt="صورة المرشح مهند الربيعي" 
+                             class="w-full h-full object-cover" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/192x192/ffffff/0B2D69?text=المرشح';"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Vision and Commitment Section -->
+        <section id="vision" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="section-header text-3xl font-bold text-[#0B2D69] mb-6">الرؤية والالتزام الأخلاقي</h2>
+            <p class="text-gray-700 leading-relaxed text-base sm:text-lg">
+                عملتُ في بيئات قانونية متعددة، من أروقة القضاء في العراق، مروراً بالشركات الهولندية، وصولاً إلى الأطر الدولية. هذا التنوع منحني فهماً عميقاً لكيفية تطبيق **أفضل المعايير العالمية** في بلدنا. هدفنا هو محاربة الفساد ودعم الإصلاح الحقيقي الذي ينتظره شعبنا، بالاعتماد على خلفيتي القانونية وسمعتي في **النزاهة**.
+            </p>
+        </section>
+
+        <!-- Experience Timeline (Visual Representation) -->
+        <section id="experience" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="section-header text-3xl font-bold text-[#0B2D69] mb-8">الخبرة المهنية (أكثر من 20 عامًا من العمل القانوني)</h2>
+
+            <!-- Timeline Container -->
+            <div class="relative border-r-4 border-gray-200 pr-8">
+                <!-- Dot for visual 20+ years -->
+                <div class="absolute -right-3 top-0 bg-yellow-500 w-6 h-6 rounded-full border-4 border-white shadow-lg"></div>
+
+                <!-- Timeline Item 1: Ministry of Finance (Current) -->
+                <div class="mb-8 relative timeline-item pr-6">
+                    <h3 class="text-xl font-bold text-[#0B2D69]">حقوقي في وزارة المالية العراقية</h3>
+                    <p class="text-sm text-gray-500 mb-2">الحاضر</p>
+                    <p class="text-gray-700">معرفة عميقة بالقوانين المالية والإدارية وأدوات **مكافحة الفساد المؤسسي**.</p>
+                </div>
+                
+                <!-- Timeline Item 2: International Dealings -->
+                <div class="mb-8 relative timeline-item pr-6">
+                    <h3 class="text-xl font-bold text-[#0B2D69]">التعامل مع الأعمال الدولية (هولندا)</h3>
+                    <p class="text-sm text-gray-500 mb-2">خبرة دولية</p>
+                    <p class="text-gray-700">عمل في شركات هولندية وتقديم استشارات قانونية حول القوانين التجارية والعمالية.</p>
+                </div>
+
+                <!-- Timeline Item 3: Litigation and Practice -->
+                <div class="mb-8 relative timeline-item pr-6">
+                    <h3 class="text-xl font-bold text-[#0B2D69]">محامٍ سابق وخبير تقاضي</h3>
+                    <p class="text-sm text-gray-500 mb-2">خبرة طويلة</p>
+                    <p class="text-gray-700">خبرة في التقاضي أمام جميع درجات المحاكم (المدنية والجنائية) وصياغة القوانين والعقود القانونية.</p>
+                </div>
+                
+            </div>
+            
+            <p class="text-center mt-8 text-lg font-semibold text-gray-800 border-t pt-4">
+                هذه المسيرة هي أدواتكم نحو مستقبل أفضل.
+            </p>
+        </section>
+
+        <!-- Achievements and Values Section -->
+        <section id="achievements" class="mb-10">
+            <h2 class="section-header text-3xl font-bold text-[#0B2D69] mb-8 pr-4">الإنجازات والقيم الأساسية</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Value Card 1: Integrity -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center border-t-4 border-[#fbbd0a]">
+                    <div class="text-5xl text-[#0B2D69] mb-3">
+                        <!-- Icon for Integrity (Inline SVG for reliability) -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold text-gray-900">النزاهة المطلقة</p>
+                    <p class="text-sm text-gray-600 mt-2">حجر الزاوية في كل قرار وتشريع نعمل عليه.</p>
+                </div>
+
+                <!-- Achievement Card 2: Human Rights -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center border-t-4 border-[#fbbd0a]">
+                    <div class="text-5xl text-[#0B2D69] mb-3">
+                        <!-- Icon for Human Rights (Inline SVG) -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h-5v-10h5m-5 10h5v-10h-5m-5 4h5m-5 4h5"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6a2 2 0 00-2-2z"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold text-gray-900">تأسيس ودعم حقوق الإنسان</p>
+                    <p class="text-sm text-gray-600 mt-2">قيادة حملات لتعزيز ثقافة حقوق الإنسان في المجتمع.</p>
+                </div>
+                
+                <!-- Achievement Card 3: Refugee Support -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center border-t-4 border-[#fbbd0a]">
+                    <div class="text-5xl text-[#0B2D69] mb-3">
+                        <!-- Icon for Teamwork/Support (Inline SVG) -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10V4m-5 3L6 8m6 4h4m-12 0h-4m6 0v4m-5-3l1 1"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold text-gray-900">دعم المهاجرين واللاجئين</p>
+                    <p class="text-sm text-gray-600 mt-2">تقديم الدعم القانوني والاجتماعي الطوعي في هولندا.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education and Final CTA Section -->
+        <section id="education" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="section-header text-3xl font-bold text-[#0B2D69] mb-6">المؤهلات الأكاديمية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="border-b pb-4 md:border-b-0 md:border-l pl-4 border-gray-200">
+                    <p class="text-lg font-semibold text-gray-800">ماجستير في القانون العام</p>
+                    <p class="text-md text-gray-600">جامعة المنصورة، مصر.</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-gray-800">بكالوريوس في القانون</p>
+                    <p class="text-md text-gray-600">جامعة بابل، العراق.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Final Message and Call to Action (Footer) -->
+        <footer id="election" class="bg-[#244B94] text-white p-6 sm:p-8 rounded-xl shadow-2xl text-center">
+            <h3 class="text-xl sm:text-2xl font-bold mb-4">رسالة أخيرة للناخبين</h3>
+            <p class="text-lg mb-6 opacity-90">
+                واجبي تجاهكم هو الالتزام بالدفاع عن كل صوت، وحماية كل حق.
+            </p>
+
+            <!-- Logo of the Political Entity -->
+            <div class="mb-6 mx-auto w-32 h-32 sm:w-40 sm:h-40 bg-white p-2 rounded-full shadow-inner">
+                <!-- Using the uploaded logo file name -->
+                <img src="logo.jpg" alt="شعار تجمع الفاو زاخو" 
+                     class="w-full h-full object-contain" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/160x160/ffffff/0B2D69?text=شعار+التجمع';"
+                />
+            </div>
+            
+            <p class="text-2xl sm:text-3xl font-extrabold text-yellow-300 mb-6 border-b-2 border-yellow-300 pb-3 inline-block">
+                أنتخبوا من يمتلك الأدوات والإرادة الأخلاقية للتغيير.
+            </p>
+            
+            <div class="bg-[#0B2D69] inline-block p-4 rounded-lg mt-4">
+                <p class="text-sm sm:text-base font-medium">
+                    <span class="block sm:inline-block mb-1 sm:mb-0">تجمع الفاو - زاخو</span>
+                    <span class="mx-2 hidden sm:inline-block">|</span>
+                    <span class="block sm:inline-block mb-1 sm:mb-0">رقم القائمة **٢١٣**</span>
+                    <span class="mx-2 hidden sm:inline-block">|</span>
+                    <span class="block sm:inline-block">التسلسل **١٤**</span>
+                </p>
+            </div>
+            
+        </footer>
+
+    </div>
+
+</body>
+</html>
